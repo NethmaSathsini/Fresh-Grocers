@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Delivery | Fresh Grocers</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="logo">Fresh <span>Grocers</span></div>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="place-order.html">Place Order</a></li>
+        <li><a href="rating.html" class="active">Rate Delivery</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <h2>Rate Delivery Personnel</h2>
+        <form id="ratingForm">
+          <div class="form-group">
+            <label>Order ID</label>
+            <input type="text" placeholder="Example: FG1001" required>
+          </div>
+          <div class="form-group">
+            <label>Delivery Agent Name</label>
+            <input type="text" placeholder="Enter delivery agent name" required>
+          </div>
+
+          <div class="rating-stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+
+          <div class="form-group">
+            <label>Comments</label>
+            <textarea placeholder="Write your feedback here"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Rating</button>
+        </form>
+        <div id="ratingMsg" class="message-box"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Fresh Grocers Sri Lanka. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Fresh Grocers</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="logo">Fresh <span>Grocers</span></div>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="customer-register.html">Customer Register</a></li>
+        <li><a href="delivery-register.html">Delivery Register</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <h2>System Login</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label>Select Role</label>
+            <select id="role" required>
+              <option value="">Choose role</option>
+              <option value="customer">Customer</option>
+              <option value="delivery">Delivery Agent</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" id="username" required>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div id="loginMsg" class="message-box"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Fresh Grocers Sri Lanka. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
